@@ -7,8 +7,10 @@ package org.unitec.maven;
 
 import java.io.*;
 
-public class LeerArchivo {
+public class LeerArchivo implements Leer {
     
+   
+    @Override
     public String leer()throws Exception{
         File file=new File("C:\\Users\\TANIA\\Documents\\TANIA\\JAVA 3\\archivo.txt");
         FileInputStream fis=new FileInputStream(file);
