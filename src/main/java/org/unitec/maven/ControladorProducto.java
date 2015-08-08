@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ControladorProducto {
     @RequestMapping(value="/producto/{nombre}/{costo}/{unidades}",
             method =RequestMethod.POST, headers={"Accept=text/html"})
-    @ResponseBody String guardar(@PathVariable String nombre, @PathVariable Integer costo,
+    @ResponseBody String guardar(@PathVariable String nombre, @PathVariable Float costo,
             @PathVariable Integer unidades)throws Exception{
         Producto p=new Producto();
         p.setCosto(costo);

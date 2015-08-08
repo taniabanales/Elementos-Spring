@@ -3,6 +3,8 @@
   <persistence-unit name="org.unitec_maven-sprinng-bootsito_jar_1.0PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>org.unitec.maven.Producto</class>
+    <class>proyectoFinal.Tarjeta</class>
+    <class>proyectoFinal.Gastos</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
