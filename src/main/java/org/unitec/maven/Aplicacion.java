@@ -25,15 +25,12 @@ public class Aplicacion {
         //LeerArchivo objeto=new LeerArchivo();
         System.out.println(objeto.leer());
                */
-        System.out.println("Un mensaje desde spring boot");
-        AnnotationConfigApplicationContext ctx= new AnnotationConfigApplicationContext(ConfiguracionBasica.class);
-        Leer servicioLeer= ctx.getBean(Leer.class);
-        System.out.println(servicioLeer.leer());
+    
+        
         
         
        
     }
-        
         
     }
     

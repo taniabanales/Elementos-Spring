@@ -21,13 +21,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
  @RequestMapping("/")
 public class ControladorTarjeta {
-    @RequestMapping (value="/tarjeta/[nombre}/{fechaCorte}",method=RequestMethod.POST, headers ={"Accept=text/htm"})
-    @ResponseBody String guardarTarjeta(@PathVariable String nombre,@PathVariable Integer fechaCorte)throws Exception{
+    @RequestMapping (value="/tarjeta/[nombre}/{fechaCorte}",method=RequestMethod.POST,
+            headers ={"Accept=text/htm"})
+    @ResponseBody String guardarTarjeta(@PathVariable String nombre,@PathVariable Integer fechaCorte)
+            throws Exception{
             
         Tarjeta t=new Tarjeta();
         t.setDiacorte(fechaCorte);
         t.setNombre(nombre);
         DAOTarjeta dao=new DAOTarjeta();
+        dao.guardar(t);
         
         return"Tarjeta guardada clon exito";
         

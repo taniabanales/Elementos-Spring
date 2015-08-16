@@ -120,5 +120,9 @@ public class Gastos implements Serializable {
     public String toString() {
         return "proyectoFinal.Gastos[ idGastos=" + idGastos + " ]";
     }
+
+    void setFecha(Integer fecha) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
